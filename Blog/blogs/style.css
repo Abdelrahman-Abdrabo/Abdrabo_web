@@ -1,0 +1,84 @@
+body {
+    direction: rtl;
+    background-color: #1b1b1e;
+    font-family: 'Beiruti', sans-serif;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #1e1e1e;
+}
+
+.ulHeader {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+.TOPlinks {
+    margin: 0 15px;
+}
+
+.a-TOP {
+    text-decoration: none;
+    color: azure;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.blogContent {
+    margin: 50px auto 20px; 
+    background-color: #1e1e1e;
+    color: rgb(211, 211, 211);
+    width: 70%;
+    padding: 20px;
+    border-radius: 3%;
+    text-align: justify;
+    line-height: 1.8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 25px;
+}
+
+.blogContent img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.blogContent h1 {
+    text-align: center;
+}
+
+header a:hover {
+    color: #6e6e6e;
+}
+
+footer {
+    margin-top: auto;
+    height: 20px;
+    font-size: 10px;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../imgs/favicon.png">
+    <!--here needs to be changed-->
+    <title>Network reconnaissance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <ul class="ulHeader">
+                    <li class="TOPlinks"><a class="a-TOP" href="../../index.html">Home</a></li>
+                    <li class="TOPlinks"><a class="a-TOP" href="#Blogs">Blogs</a></li>
+                    <li class="blog-title">-\ Abdrabo \-</li>
+                    <li class="TOPlinks"><a class="a-TOP" href="../../terminal/terminal.html">Terminal</a></li>
+                    <li class="TOPlinks"><a class="a-TOP" href="#Cv">CV</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--here what you want to change-->
+        <main>
+            <div class="blogContent">
+                <img src="../images/blog1.png" alt="Blog Image" width="100%">
+                <h1>Network Reconnaissance</h1>
+                <p>
+                    تعالى نتكلم عن ال network reconnaissance أو network discovery
+                    <br>
+                    الهجوم لما بياجي, بياجي عن طريق الشبكة أو برنامج مصاب لما بعمل reconnaissance بكون قادر أعرف الهجوم ممكن ياجيلي منين حاجة زي كده ممكن يستخدمها الهاكر أو حد من تيم السيكيوريتي.
+                    <br><br>
+                    <b>Topology discovery (footprinting)</b> 
+                    <br> بعمل فحص للشبكة وال hosts وال ip range اللي عندي يعني مثلا ممكن أعمل فحص الاقي عشر أجهزة منهم ويندوز وماك وكده وبالتالي هيكون عندي تخيل لشكل الشبكة في بقى شوية أوامر موجودة في ويندوز أو لينكس هتساعدك تعمل topology discovery:
+                    <br>
+                    <br>
+                    الأوامر اللي جاية بتكون في نطاق ال local network بتاعتي, أو كمان ال subnet اللي أنا فيه
+                    <br>
+                    ipconfig: on windows
+                    <br>
+                    ifconfig: on Linux
+                    <br>
+                    ودول بيعرضوا ال configuration بتاع كارت الشبكة عندي او يعني ال network interface configuration.
+                    <br>
+                    ping : بكتب بعديه ip أو hostname
+                    ده بستخدمه عشان أتأكد من الconnctoin بيني وبين جهاز تاني كأنك يعني بتنادي على صاحبك تتأكد هو سامعك ولا لأ. والكوماند ده بيستخدم بروتوكول ICMP.
+                    مش شرط يكون الip معاك في الشبكة, ممكن يكون في مكان تاني برده بتتأكد انك قادر توصله ولا لأ.
+                    <br>
+                    arp -a : بيعرض الip وال mac بتاعت الأجهزة اللي تواصلت معاها
+                    اللي هو يعني بيعرض ال ARP cache
+                    <br>
+                    وبرده في شوية كوماندز تانية بس خاصة بال routing زي 'route' و 'tracert' على ويندوز و 'traceroute' على لينكس و 'pathping'
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>all copyrights reserved for Abd El-Rahman Ahmed</p>
+        </footer>
+    </div>
+</body>
+</html>
